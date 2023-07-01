@@ -4,13 +4,7 @@ import './App.css';
 import { Layout } from './component/Layout';
 
 function App() {
-  return (
-    <div>
-      <Layout>
-        <h1>Content</h1>
-      </Layout>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;

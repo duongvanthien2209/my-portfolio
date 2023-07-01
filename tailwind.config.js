@@ -32,8 +32,10 @@ module.exports = {
         layout: '18.375rem minmax(0, 1fr)',
       },
       colors: {
-        primary: '#233040',
-        secondary: '#fcd903',
+        primary: '#202235',
+        secondary: '#23263c',
+        cardBackground: '#2c304a',
+        textPrimary: '#FFC576',
         background: '#f5f5f5',
         selected: '#F8E7F1',
         gray1: '#333333',

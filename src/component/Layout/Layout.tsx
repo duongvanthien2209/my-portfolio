@@ -2,25 +2,16 @@ import React, { ReactElement, useState } from 'react';
 import { Header } from './Header';
 import classes from './Layout.module.scss';
 import { SideBar } from './SideBar';
+import { Outlet } from 'react-router-dom';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export function Layout({ children }: Props): ReactElement {
-  const [expaned, setExpaned] = useState(false);
-
+export function Layout(): ReactElement {
   return (
-    <>
-      <Header expaned={expaned} setExpanded={setExpaned} />
+    <div className={classes['layout']}>
+      <Header />
 
       <div className={classes['body']}>
-        <div>
-          <SideBar expaned={expaned} />
-        </div>
-
-        <div>{children}</div>
+        <Outlet />
       </div>
-    </>
+    </div>
   );
 }
