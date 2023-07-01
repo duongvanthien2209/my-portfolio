@@ -1,0 +1,35 @@
+.side-bar {
+  @apply relative -top-[1.875rem] bg-white
+  px-[1.875rem] transition-opacity;
+
+  &.collapsed {
+    @apply h-0 overflow-hidden;
+  }
+
+  &-item {
+    @apply relative py-[0.938rem]
+    flex items-center justify-between cursor-pointer;
+
+    .side-bar-icon {
+      @apply text-icon-gray;
+    }
+
+    &:hover {
+      & > span {
+        @apply text-secondary;
+      }
+
+      .side-bar-icon {
+        @apply text-black;
+      }
+
+      & > .sub-menu {
+        @apply opacity-100;
+      }
+    }
+
+    &:not(:last-child) {
+      @apply border-b border-menu;
+    }
+  }
+}
