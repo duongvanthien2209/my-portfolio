@@ -1,0 +1,47 @@
+.header {
+  @apply container py-9
+  flex justify-between items-center;
+
+  .brand {
+    img {
+      @apply max-w-[150px];
+    }
+  }
+
+  .main-menu {
+    @apply flex;
+
+    .main-menu-item {
+      @apply px-5;
+
+      a {
+        @apply relative py-[15px] text-white text-main-link uppercase;
+
+        &:after {
+          @apply absolute bottom-0 left-0 w-0 h-0.5 bg-transparent;
+          content: '';
+          transition: all 0.3s;
+        }
+      }
+
+      &:hover {
+        a {
+          @apply text-textPrimary;
+
+          &:after {
+            @apply bg-textPrimary w-full;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-btn {
+    @apply button-sm mx-[10px] py-2 px-[30px];
+
+    &:hover {
+      @apply bg-textPrimary text-black;
+      transition: all 0.3s;
+    }
+  }
+}

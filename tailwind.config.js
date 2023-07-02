@@ -145,6 +145,9 @@ module.exports = {
       },
       backgroundOpacity: { 6: '0.06' },
       borderColor: {
+        yellow: '#FFC576',
+
+        // Old
         grey: '#EFF2F7',
         primary: '#bd0f72',
         custom: 'rgb(57, 69, 83)',
@@ -162,6 +165,11 @@ module.exports = {
       backgroundColor: {
         'grey-light': '#eff2f7',
         'divider-grey': '#E0E0E0',
+
+        // New
+        primary: '#202235',
+        secondary: '#23263c',
+        'card-background': '#2c304a',
       },
       minWidth: {
         6: '1.5rem',
@@ -227,9 +235,14 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateY(-20%)', 'pointer-events': 'none' },
           '100%': { opacity: 1, transform: 'translateY(0)', 'pointer-events': 'auto' },
         },
+        underlined: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 0.2s',
+        underlined: 'underlined 0.2s ease-in-out infinite',
       },
       boxShadow: {
         'one-1': '0px 4px 10px rgba(0, 0, 0, 0.1)',
@@ -327,6 +340,44 @@ module.exports = {
   plugins: [
     plugin(({ addComponents, theme }) => {
       addComponents({
+        // New
+        '.container': {
+          '@apply px-[15px] mx-auto max-w-full': {},
+          width: '1170px',
+
+          // Response
+          '@screen xlDown': {
+            width: '1110px',
+          },
+          '@screen lgDown': {
+            width: '970px',
+          },
+          '@screen mdDown': {
+            width: '750px',
+          },
+        },
+
+        // Text
+        '.text-main-link': {
+          '@apply font-proximaNova': {},
+          fontSize: '14px',
+          lineHeight: '30px',
+          fontWeight: '600',
+        },
+
+        // Button
+        'button-lg, .button-md, .button-sm': {
+          '@apply text-main-link': {},
+
+          border: '1px solid #FFC576',
+          color: '#FFC576',
+          background: 'transparent',
+          textTransform: 'uppercase',
+          padding: '10px 30px',
+          borderRadius: '2px',
+        },
+
+        // Old
         '.table-sticky-right-col': {
           '@apply sticky right-0 z-1': {},
         },

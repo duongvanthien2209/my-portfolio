@@ -7,7 +7,9 @@ import { Outlet } from 'react-router-dom';
 export function Layout(): ReactElement {
   return (
     <div className={classes['layout']}>
-      <Header />
+      <div className="absolute z-[999] top-0 left-0 w-full">
+        <Header />
+      </div>
 
       <div className={classes['body']}>
         <Outlet />
