@@ -6,21 +6,26 @@
 
   .background-overlay {
     @apply absolute z-2 top-0 left-0 h-full w-full bg-fourth opacity-75;
+    foo: bar;
   }
 
   .title {
     @apply mb-[50px];
+    foo: bar;
 
     span {
       @apply text-textPrimary uppercase;
+      foo: bar;
     }
 
     h3 {
       @apply text-5xl text-white font-bold;
+      foo: bar;
     }
 
     p {
       @apply text-white;
+      foo: bar;
     }
   }
 }

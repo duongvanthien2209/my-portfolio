@@ -1,45 +1,25 @@
 .customer-section {
   @apply bg-third py-[120px];
+  foo: bar;
 
   .title {
     span {
       @apply text-textPrimary uppercase;
+      foo: bar;
     }
 
     h3 {
       @apply text-5xl text-white font-bold;
+      foo: bar;
     }
   }
-
-  //div[class^='swiper'] {
-  //  @apply bg-third py-[120px];
-  //
-  //  .title {
-  //    @apply pb-[50px];
-  //
-  //    span {
-  //      @apply text-textPrimary uppercase;
-  //    }
-  //
-  //    h3 {
-  //      @apply text-5xl text-white font-bold;
-  //    }
-  //  }
-  //}
-  //
-  //div[class='swiper-wrapper'] {
-  //  @apply container;
-  //}
 }
-
-//.customer-section {
-//  @apply relative container py-[120px];
-//}
 
 
 .btn {
   @apply h-[50px] w-[50px] border border-textPrimary
   flex justify-center items-center text-[rgba(255,255,255,0.5)];
+  foo: bar;
 
   &:hover {
     @apply bg-textPrimary text-black;
@@ -48,10 +28,12 @@
 
   &.prev-btn {
     @apply rounded-l;
+    foo: bar;
   }
 
   &.next-btn {
     @apply rounded-r;
+    foo: bar;
   }
 }
 

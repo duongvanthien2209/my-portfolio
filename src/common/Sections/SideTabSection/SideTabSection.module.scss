@@ -1,29 +1,37 @@
 .side-tab-section {
   @apply py-[120px];
+  foo: bar;
 
   .wrapper {
     @apply container grid grid-cols-4;
+    foo: bar;
 
     .tab-list {
       @apply flex flex-col;
+      foo: bar;
 
       .title {
         @apply mb-[50px];
+        foo: bar;
 
         span {
           @apply text-textPrimary uppercase;
+          foo: bar;
         }
 
         h3 {
           @apply text-5xl text-white font-bold;
+          foo: bar;
         }
       }
 
       .tab-header {
         @apply py-[7px] text-left outline-0;
+        foo: bar;
 
         & > span {
           @apply relative text-[14px] text-left uppercase text-white;
+          foo: bar;
 
           &:after {
             @apply absolute z-7 top-[50%] -right-2 opacity-0 transform translate-y-[-50%];
@@ -43,6 +51,7 @@
 
             &:after {
               @apply -right-6 opacity-100;
+              foo: bar;
             }
           }
         }
@@ -50,9 +59,11 @@
         &.selected {
           & > span {
             @apply text-textPrimary;
+            foo: bar;
 
             &:after {
               @apply -right-6 opacity-100;
+              foo: bar;
             }
           }
         }
@@ -61,12 +72,15 @@
 
     .tab-panels {
       @apply col-span-3;
+      foo: bar;
 
       .tab-panel {
         @apply grid grid-cols-3 gap-4 grid-rows-2;
+        foo: bar;
 
         img {
           @apply w-full h-full object-cover;
+          foo: bar;
         }
       }
     }

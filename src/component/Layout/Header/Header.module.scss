@@ -1,33 +1,41 @@
 .header {
   @apply container py-9
   flex justify-between items-center;
+  foo: bar;
 
   .brand {
     img {
       @apply max-w-[150px];
+      foo: bar;
     }
   }
 
   .main-menu {
     @apply flex;
+    foo: bar;
 
     .main-menu-item {
       @apply px-5;
+      foo: bar;
 
       a {
         @apply relative py-[15px] text-white text-main-link uppercase;
+        foo: bar;
 
         &:after {
           @apply absolute bottom-0 left-0 w-0 h-0.5 bg-transparent;
+          foo: bar;
           content: '';
           transition: all 0.3s;
         }
 
         &.active {
           @apply text-textPrimary;
+          foo: bar;
 
           &:after {
             @apply bg-textPrimary w-full;
+            foo: bar;
           }
         }
       }
@@ -35,9 +43,11 @@
       &:hover {
         a {
           @apply text-textPrimary;
+          foo: bar;
 
           &:after {
             @apply bg-textPrimary w-full;
+            foo: bar;
           }
         }
       }

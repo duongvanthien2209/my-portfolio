@@ -16,25 +16,31 @@
 
   .title {
     @apply pb-[50px];
+    foo: bar;
 
     span {
       @apply text-textPrimary uppercase;
+      foo: bar;
     }
 
     h3 {
       @apply text-5xl text-white font-bold;
+      foo: bar;
     }
   }
 
   div[class^='swiper-pagination'] {
     @apply relative top-0 bottom-0
     flex justify-start space-x-1 py-[20px];
+    foo: bar;
 
     span[class^='swiper-pagination-bullet'] {
       @apply w-[20px] h-[5px] rounded-none mx-0 bg-[#4c4244] opacity-100;
+      foo: bar;
 
       &[class*='swiper-pagination-bullet-active'] {
         @apply bg-textPrimary;
+        foo: bar;
       }
     }
   }

@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from './component/Layout';
 import { Contact, Home, Price } from './component/pages';
-import { Example } from './component/pages/Example/Example';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -20,7 +19,6 @@ const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: '/price', element: <Price /> },
       { path: '/contact', element: <Contact /> },
-      { path: 'example', element: <Example /> },
     ],
   },
 ]);

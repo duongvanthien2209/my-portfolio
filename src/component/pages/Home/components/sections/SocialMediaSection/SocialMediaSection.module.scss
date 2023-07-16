@@ -1,15 +1,19 @@
 .social-media-section {
   @apply bg-[#23263c] py-[120px];
+  foo: bar;
 
   .title {
     @apply mb-[50px];
+    foo: bar;
 
     span {
       @apply text-textPrimary uppercase;
+      foo: bar;
     }
 
     h3 {
       @apply text-5xl text-white font-bold;
+      foo: bar;
     }
   }
 }
@@ -21,14 +25,17 @@
 
     p {
       @apply text-black;
+      foo: bar;
     }
 
     svg {
       @apply text-iconColor;
+      foo: bar;
     }
   }
 
   svg {
     @apply w-[40px] h-auto text-textPrimary transition-all duration-1000;
+    foo: bar;
   }
 }

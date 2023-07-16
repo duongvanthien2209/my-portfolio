@@ -1,18 +1,23 @@
 .main-section {
   @apply container pb-[120px];
+  foo: bar;
 
   .tab-list {
     @apply grid grid-cols-6 border border-fourth border-t-0;
+    foo: bar;
 
     .tab-header {
       @apply inline-block outline-0 py-[17px] bg-third border-r border-fourth text-textSecondary uppercase;
+      foo: bar;
 
       &:last-child {
         @apply border-r-0;
+        foo: bar;
       }
 
       &.selected {
         @apply border-textPrimary bg-textPrimary text-black;
+        foo: bar;
       }
     }
   }

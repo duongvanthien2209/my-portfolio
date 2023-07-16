@@ -1,23 +1,29 @@
 .about {
   @apply grid grid-cols-2 h-[640px] py-[70px] px-[45px];
+  foo: bar;
 
   &-img {
     @apply flex items-center justify-center;
+    foo: bar;
   }
 
   .content {
     @apply flex flex-col justify-between items-start;
+    foo: bar;
 
     span {
       @apply uppercase text-textPrimary;
+      foo: bar;
     }
 
     .question {
       @apply text-5xl font-bold text-white;
+      foo: bar;
     }
 
     .description {
       @apply text-[16px] text-white;
+      foo: bar;
     }
   }
 }

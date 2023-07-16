@@ -1,49 +1,61 @@
 .contact-form {
   @apply p-[80px] bg-fourth;
+  foo: bar;
 
   .title {
     @apply mb-[50px];
+    foo: bar;
 
     span {
       @apply text-textPrimary uppercase;
+      foo: bar;
     }
 
     h3 {
       @apply text-5xl text-white font-bold;
+      foo: bar;
     }
 
     p {
       @apply text-white;
+      foo: bar;
     }
   }
 
   .form-content {
     @apply grid grid-cols-2 grid-rows-4 gap-[30px];
+    foo: bar;
 
     input, textarea {
       @apply bg-transparent border p-[18px] outline-none rounded;
+      foo: bar;
     }
   }
 }
 
 .contacts {
   @apply py-[120px] grid grid-cols-3;
+  foo: bar;
 
   .contact-card {
     @apply flex space-x-6 px-[40px];
+    foo: bar;
 
     .contact-card-content {
       p:first-child {
         @apply text-textPrimary mb-4;
+        foo: bar;
       }
 
       p {
         @apply text-white;
+        foo: bar;
       }
     }
 
     svg {
       @apply h-[20px] w-[20px] text-white;
+      foo: bar;
     }
   }
 }

@@ -1,5 +1,6 @@
 .project-card {
   @apply relative bg-third mb-[5px];
+  foo: bar;
 
   &:after {
     @apply absolute bottom-0 left-0 w-full h-[1px] bg-textPrimary;
@@ -9,18 +10,21 @@
 
   &:hover:after {
     @apply h-[5px];
+    foo: bar;
   }
 
   &:hover {
     .img {
       img {
         @apply scale-110;
+        foo: bar;
       }
     }
   }
 
   .img {
     @apply overflow-hidden rounded;
+    foo: bar;
 
     img {
       @apply relative;
@@ -30,17 +34,21 @@
 
   .content {
     @apply py-[40px] px-[30px];
+    foo: bar;
 
     .tags {
       @apply text-[12px] text-textPrimary;
+      foo: bar;
     }
 
     .title {
       @apply text-2xl text-white mt-[10px] mb-[20px];
+      foo: bar;
     }
 
     .description {
       @apply text-white mb-[50px];
+      foo: bar;
     }
   }
 }
