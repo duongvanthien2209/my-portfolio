@@ -34,8 +34,12 @@ module.exports = {
       colors: {
         primary: '#202235',
         secondary: '#23263c',
+        third: '#2a2c47',
+        fourth: '#313552',
         cardBackground: '#2c304a',
+        iconColor: '#b98c51',
         textPrimary: '#FFC576',
+        textSecondary: '#CACBD2',
         background: '#f5f5f5',
         selected: '#F8E7F1',
         gray1: '#333333',

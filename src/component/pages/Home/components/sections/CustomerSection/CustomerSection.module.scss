@@ -1,0 +1,57 @@
+.customer-section {
+  @apply bg-third py-[120px];
+
+  .title {
+    span {
+      @apply text-textPrimary uppercase;
+    }
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+    }
+  }
+
+  //div[class^='swiper'] {
+  //  @apply bg-third py-[120px];
+  //
+  //  .title {
+  //    @apply pb-[50px];
+  //
+  //    span {
+  //      @apply text-textPrimary uppercase;
+  //    }
+  //
+  //    h3 {
+  //      @apply text-5xl text-white font-bold;
+  //    }
+  //  }
+  //}
+  //
+  //div[class='swiper-wrapper'] {
+  //  @apply container;
+  //}
+}
+
+//.customer-section {
+//  @apply relative container py-[120px];
+//}
+
+
+.btn {
+  @apply h-[50px] w-[50px] border border-textPrimary
+  flex justify-center items-center text-[rgba(255,255,255,0.5)];
+
+  &:hover {
+    @apply bg-textPrimary text-black;
+    transition: all 0.3s;
+  }
+
+  &.prev-btn {
+    @apply rounded-l;
+  }
+
+  &.next-btn {
+    @apply rounded-r;
+  }
+}
+

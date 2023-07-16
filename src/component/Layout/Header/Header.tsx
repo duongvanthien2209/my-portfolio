@@ -5,6 +5,7 @@ import { MainMenu } from './MainMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { Link } from 'react-router-dom';
+import { Button } from '../../../common';
 
 type Props = {};
 
@@ -20,7 +21,7 @@ export function Header({}: Props): ReactElement {
 
       <div className="flex items-center">
         <MainMenu />
-        <button className={classes['contact-btn']}>Let's chat</button>
+        <Button className="mx-[10px]">Let's chat</Button>
       </div>
     </div>
   );

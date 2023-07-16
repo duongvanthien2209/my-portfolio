@@ -1,0 +1,26 @@
+.sub-title {
+  @apply relative pt-[150px] pb-[200px];
+  background-image: url("https://wp.quomodosoft.com/growth/wp-content/uploads/2019/06/contact-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .background-overlay {
+    @apply absolute z-2 top-0 left-0 h-full w-full bg-fourth opacity-75;
+  }
+
+  .title {
+    @apply mb-[50px];
+
+    span {
+      @apply text-textPrimary uppercase;
+    }
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+    }
+
+    p {
+      @apply text-white;
+    }
+  }
+}

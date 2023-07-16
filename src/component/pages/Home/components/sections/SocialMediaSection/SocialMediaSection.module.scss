@@ -1,0 +1,34 @@
+.social-media-section {
+  @apply bg-[#23263c] py-[120px];
+
+  .title {
+    @apply mb-[50px];
+
+    span {
+      @apply text-textPrimary uppercase;
+    }
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+    }
+  }
+}
+
+.social-media-card {
+  &:hover {
+    @apply bg-textPrimary;
+    transition: all 0.3s;
+
+    p {
+      @apply text-black;
+    }
+
+    svg {
+      @apply text-iconColor;
+    }
+  }
+
+  svg {
+    @apply w-[40px] h-auto text-textPrimary transition-all duration-1000;
+  }
+}

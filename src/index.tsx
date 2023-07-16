@@ -5,7 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from './component/Layout';
-import { Contact, Home } from './component/pages';
+import { Contact, Home, Price } from './component/pages';
+import { Example } from './component/pages/Example/Example';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +18,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '', element: <Home /> },
-      { path: 'contact', element: <Contact /> },
+      { path: '/price', element: <Price /> },
+      { path: '/contact', element: <Contact /> },
+      { path: 'example', element: <Example /> },
     ],
   },
 ]);

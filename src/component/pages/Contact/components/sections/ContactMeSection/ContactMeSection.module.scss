@@ -1,0 +1,49 @@
+.contact-form {
+  @apply p-[80px] bg-fourth;
+
+  .title {
+    @apply mb-[50px];
+
+    span {
+      @apply text-textPrimary uppercase;
+    }
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+    }
+
+    p {
+      @apply text-white;
+    }
+  }
+
+  .form-content {
+    @apply grid grid-cols-2 grid-rows-4 gap-[30px];
+
+    input, textarea {
+      @apply bg-transparent border p-[18px] outline-none rounded;
+    }
+  }
+}
+
+.contacts {
+  @apply py-[120px] grid grid-cols-3;
+
+  .contact-card {
+    @apply flex space-x-6 px-[40px];
+
+    .contact-card-content {
+      p:first-child {
+        @apply text-textPrimary mb-4;
+      }
+
+      p {
+        @apply text-white;
+      }
+    }
+
+    svg {
+      @apply h-[20px] w-[20px] text-white;
+    }
+  }
+}

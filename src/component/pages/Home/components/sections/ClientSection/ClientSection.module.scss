@@ -1,0 +1,41 @@
+.client-section {
+  @apply max-w-full pb-[120px];
+  padding-left: calc((100% - 1170px)/2 + 15px);
+
+  @screen xlDown {
+    padding-left: calc((100% - 1110px)/2 + 15px);
+  }
+
+  @screen lgDown {
+    padding-left: calc((100% - 970px)/2 + 15px);
+  }
+
+  @screen mdDown {
+    padding-left: calc((100% - 750px)/2 + 15px);
+  }
+
+  .title {
+    @apply pb-[50px];
+
+    span {
+      @apply text-textPrimary uppercase;
+    }
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+    }
+  }
+
+  div[class^='swiper-pagination'] {
+    @apply relative top-0 bottom-0
+    flex justify-start space-x-1 py-[20px];
+
+    span[class^='swiper-pagination-bullet'] {
+      @apply w-[20px] h-[5px] rounded-none mx-0 bg-[#4c4244] opacity-100;
+
+      &[class*='swiper-pagination-bullet-active'] {
+        @apply bg-textPrimary;
+      }
+    }
+  }
+}

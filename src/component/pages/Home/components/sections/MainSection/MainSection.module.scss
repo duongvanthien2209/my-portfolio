@@ -1,0 +1,19 @@
+.main-section {
+  @apply container pb-[120px];
+
+  .tab-list {
+    @apply grid grid-cols-6 border border-fourth border-t-0;
+
+    .tab-header {
+      @apply inline-block outline-0 py-[17px] bg-third border-r border-fourth text-textSecondary uppercase;
+
+      &:last-child {
+        @apply border-r-0;
+      }
+
+      &.selected {
+        @apply border-textPrimary bg-textPrimary text-black;
+      }
+    }
+  }
+}

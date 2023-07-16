@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import classes from './Header.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
 export function MainMenu(): ReactElement {
   const menuItems = [
@@ -15,7 +16,9 @@ export function MainMenu(): ReactElement {
     <div className={classes['main-menu']}>
       {menuItems.map((item, index) => (
         <div className={classes['main-menu-item']} key={index}>
-          <Link to={item.link}>{item.title}</Link>
+          <NavLink className={({ isActive }) => classNames(isActive && classes['active'])} to={item.link}>
+            {item.title}
+          </NavLink>
         </div>
       ))}
     </div>

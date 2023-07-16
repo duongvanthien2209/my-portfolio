@@ -1,0 +1,25 @@
+.personal-card {
+  @apply bg-cardBackground p-[40px] border border-textPrimary rounded;
+
+  .avatar {
+    @apply flex justify-start items-center mb-[40px] space-x-4;
+
+    img {
+      @apply h-[64px] w-[64px] rounded-full overflow-hidden;
+    }
+
+    .content {
+      p {
+        @apply text-2xl text-white;
+      }
+
+      span {
+        @apply text-textPrimary;
+      }
+    }
+  }
+
+  .description {
+    @apply text-left text-white;
+  }
+}

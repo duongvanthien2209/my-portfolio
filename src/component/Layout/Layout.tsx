@@ -3,6 +3,7 @@ import { Header } from './Header';
 import classes from './Layout.module.scss';
 import { SideBar } from './SideBar';
 import { Outlet } from 'react-router-dom';
+import { Footer } from './Footer';
 
 export function Layout(): ReactElement {
   return (
@@ -14,6 +15,8 @@ export function Layout(): ReactElement {
       <div className={classes['body']}>
         <Outlet />
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,46 @@
+.project-card {
+  @apply relative bg-third mb-[5px];
+
+  &:after {
+    @apply absolute bottom-0 left-0 w-full h-[1px] bg-textPrimary;
+    content: '';
+    transition: height .4s;
+  }
+
+  &:hover:after {
+    @apply h-[5px];
+  }
+
+  &:hover {
+    .img {
+      img {
+        @apply scale-110;
+      }
+    }
+  }
+
+  .img {
+    @apply overflow-hidden rounded;
+
+    img {
+      @apply relative;
+      transition: all .4s;
+    }
+  }
+
+  .content {
+    @apply py-[40px] px-[30px];
+
+    .tags {
+      @apply text-[12px] text-textPrimary;
+    }
+
+    .title {
+      @apply text-2xl text-white mt-[10px] mb-[20px];
+    }
+
+    .description {
+      @apply text-white mb-[50px];
+    }
+  }
+}

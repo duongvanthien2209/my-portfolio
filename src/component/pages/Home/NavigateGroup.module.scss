@@ -1,0 +1,7 @@
+.navigate-group {
+  @apply flex justify-between items-center p-4 text-white;
+
+  .prev-btn, .next-btn {
+    @apply flex items-center justify-center w-8 h-8 rounded-full shadow;
+  }
+}

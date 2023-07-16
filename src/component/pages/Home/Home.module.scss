@@ -1,44 +1,65 @@
+//.wrapper {
+//  @apply relative w-full h-[100vh];
+//
+//  .content {
+//    @apply relative z-2 container flex h-full;
+//
+//    .description {
+//      @apply flex items-center flex-grow;
+//
+//      p {
+//        @apply text-8xl font-bold text-white mb-0;
+//
+//        span:first-child, span:last-child {
+//          @apply text-3xl font-normal;
+//        }
+//
+//        span:first-child {
+//          @apply text-textPrimary;
+//        }
+//      }
+//    }
+//
+//    .person {
+//      @apply h-[80vh] w-auto;
+//    }
+//  }
+//
+//  .bubbles {
+//    @apply absolute top-0 left-0 w-full h-full
+//    flex;
+//
+//    span {
+//      @apply relative h-[30px] w-[30px] bg-[#4fc3dc] mx-1 rounded-full;
+//      box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+//      animation: animate 15s linear infinite;
+//      animation-duration: calc(30s / var(--i));
+//
+//      &:nth-child(even) {
+//        @apply bg-[#ff2d75];
+//        box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+//      }
+//    }
+//  }
+//}
 
-
-.wrapper {
-  @apply relative w-full h-[100vh];
-
-  .content {
-    @apply relative z-2 container flex h-full;
-
-    .description {
-      @apply flex-grow;
-    }
-
-    .person {
-      @apply h-[80vh] w-auto;
-    }
-  }
-
-  .bubbles {
-    @apply absolute top-0 left-0 w-full h-full
-    flex;
-
-    span {
-      @apply relative h-[30px] w-[30px] bg-[#4fc3dc] mx-1 rounded-full;
-      box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-      animation: animate 15s linear infinite;
-      animation-duration: calc(30s / var(--i));
-
-      &:nth-child(even) {
-        @apply bg-[#ff2d75];
-        box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
-      }
-    }
-  }
-}
-
-@keyframes animate  {
-  0% {
-    transform: translateY(100vh) scale(0);
-  }
-
-  100% {
-    transform: translateY(-10vh) scale(1);
-  }
-}
+//New
+//.home {
+//  @apply container h-[100vh] smDown:pr-0 smDown:pl-4;
+//
+//  //& > div[class='swiper-wrapper'] {
+//  //  @apply items-stretch;
+//  //}
+//  .swiper-slide-wrapper {
+//    @apply pr-4;
+//
+//    .swiper-slide {
+//      @apply rounded-2xl overflow-hidden pb-[100%] bg-cover bg-center;
+//
+//      //img {
+//      //  @apply inline-block w-full h-auto;
+//      //  object-fit: cover;
+//      //}
+//    }
+//  }
+//}
