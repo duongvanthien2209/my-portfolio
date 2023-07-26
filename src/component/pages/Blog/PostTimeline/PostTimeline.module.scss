@@ -1,0 +1,19 @@
+.custom-article {
+  @apply relative;
+
+  &:before {
+    @apply content-[''] absolute z-2 top-[50px] -left-[42px] h-4 w-4 bg-textPrimary mx-1 rounded-full;
+  }
+
+  &:after {
+    @apply content-[''] absolute z-3 top-[50px] -left-[42px] h-4 w-4 bg-textPrimary mx-1 rounded-full;
+    animation: pulseAnimate 2s ease-out infinite;
+  }
+}
+
+@keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}

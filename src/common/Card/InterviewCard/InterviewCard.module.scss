@@ -1,0 +1,45 @@
+.interview-card {
+  @apply flex space-x-6;
+
+  .img {
+    @apply relative w-full bg-cover bg-[center_top_1px] rounded-lg overflow-hidden;
+
+    &:before {
+      @apply content-[''] block pb-[100%];
+    }
+  }
+
+  .content {
+    @apply flex flex-col justify-between items-start;
+
+    p {
+      @apply text-white;
+
+      &:first-child {
+        @apply text-2xl font-semibold;
+      }
+    }
+
+    &:hover {
+      p {
+        &:first-child {
+          @apply text-textPrimary;
+        }
+      }
+    }
+
+    .btn {
+      @apply relative flex items-center;
+
+      svg {
+        @apply absolute text-textPrimary top-[50%] -right-[1rem] -translate-y-[50%] opacity-0 duration-500;
+      }
+
+      &:hover {
+        svg {
+          @apply -right-[2rem] opacity-100;
+        }
+      }
+    }
+  }
+}

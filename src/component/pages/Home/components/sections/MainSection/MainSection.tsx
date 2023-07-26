@@ -3,6 +3,10 @@ import classes from './MainSection.module.scss';
 import { Tab } from '@headlessui/react';
 import classNames from 'classnames';
 import { About } from './About';
+import { ProgressBar } from '../../../../../../common';
+import { Skills } from './Skills';
+import { Service } from './Service';
+import { Interview } from './Interview';
 
 type Props = {};
 
@@ -46,9 +50,15 @@ export function MainSection({}: Props): ReactElement {
           <Tab.Panel>
             <About />
           </Tab.Panel>
-          <Tab.Panel>Content 2</Tab.Panel>
-          <Tab.Panel>Content 3</Tab.Panel>
-          <Tab.Panel>Content 1</Tab.Panel>
+          <Tab.Panel>
+            <Skills />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Service />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Interview />
+          </Tab.Panel>
           <Tab.Panel>Content 2</Tab.Panel>
           <Tab.Panel>Content 3</Tab.Panel>
         </Tab.Panels>

@@ -1,0 +1,19 @@
+.service-card {
+  .content {
+    p {
+      @apply text-2xl text-white font-semibold py-4 transition duration-200;
+    }
+
+    span {
+      @apply text-white font-light;
+    }
+  }
+
+  &:hover {
+    .content {
+      p {
+        @apply text-textPrimary;
+      }
+    }
+  }
+}

@@ -16,11 +16,14 @@ export function About({}: Props): ReactElement {
           <h2 className={classes['question']}>Why hire me for your next project?</h2>
         </div>
         <p className={classes['description']}>
-          Meet my startup design agency Shape Rex Currently I am working at CodeNext as Product Designer. Before that
-          I’ve worked at SpurBee, Dhaka as a UX, UI Designer. I love to work in User Experience & User Interface
-          designing. Because I love to solve the design problem and find easy and better solutions to solve it. I always
-          try my best to make good user interface with the best user experience. I have been working as a Visual
-          designer from.
+          I am an experienced full-stack web developer with a strong proficiency in{' '}
+          <span className="text-textPrimary">JavaScript</span> and <span className="text-textPrimary">Typescript</span>.
+          My expertise extends to front-end frameworks such as <span className="text-textPrimary">ReactJS</span> and{' '}
+          <span className="text-textPrimary">NextJS</span>. On the back end, I am well-versed in working with{' '}
+          <span className="text-textPrimary">NodeJS</span> and <span className="text-textPrimary">NestJS</span>{' '}
+          framework, leveraging <span className="text-textPrimary">RESTful API</span>. Additionally, I have
+          comprehensive knowledge of various databases, including SQL and non-SQL like{' '}
+          <span className="text-textPrimary">MongoDB</span> and <span className="text-textPrimary">MySQL</span>.
         </p>
         <Button>Learn More</Button>
       </div>

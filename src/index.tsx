@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Layout } from './component/Layout';
-import { Contact, Home, Price } from './component/pages';
+import { BlogLayout, Layout } from './component/Layout';
+import { ClassGrid, Contact, Home, LeftSidebar, PostTimeline, Price } from './component/pages';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,6 +19,15 @@ const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: '/price', element: <Price /> },
       { path: '/contact', element: <Contact /> },
+      {
+        path: '/blog',
+        element: <BlogLayout />,
+        children: [
+          { path: 'class-grid', element: <ClassGrid /> },
+          { path: 'left-sidebar', element: <LeftSidebar /> },
+          { path: 'post-timeline', element: <PostTimeline /> },
+        ],
+      },
     ],
   },
 ]);
