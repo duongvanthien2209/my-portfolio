@@ -1,0 +1,47 @@
+.sub-title {
+  @apply relative py-[150px];
+  background-image: url("https://wp.quomodosoft.com/growth/wp-content/uploads/2019/06/contact-image-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .background-overlay {
+    @apply absolute z-2 top-0 left-0 h-full w-full bg-fourth opacity-75;
+    foo: bar;
+  }
+
+  .title {
+    @apply mb-[50px];
+    foo: bar;
+
+    h3 {
+      @apply text-5xl text-white font-bold;
+      foo: bar;
+    }
+
+    span {
+      @apply text-white;
+      foo: bar;
+    }
+  }
+}
+
+.content {
+  @apply container py-[120px] space-y-6;
+}
+
+.business-list {
+  @apply grid grid-cols-2 grid-rows-3 gap-4;
+
+  li {
+    @apply flex items-center space-x-4;
+
+    svg {
+      @apply text-textPrimary;
+    }
+
+    span {
+      @apply text-white;
+    }
+  }
+}

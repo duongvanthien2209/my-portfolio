@@ -32,7 +32,7 @@ export function Interview({}: Props): ReactElement {
   ];
 
   return (
-    <div className="grid grid-cols-2 px-[50px] py-[70px] gap-[60px]">
+    <div className="flex flex-col lg:grid grid-cols-2 px-[10px] lg:px-[50px] py-[70px] gap-[60px]">
       {interviewCards.map((interviewCard) => (
         <InterviewCard {...interviewCard} />
       ))}

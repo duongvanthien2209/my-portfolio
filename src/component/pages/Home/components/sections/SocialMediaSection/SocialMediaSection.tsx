@@ -54,7 +54,7 @@ export function SocialMediaSection({}: Props): ReactElement {
           <h3>Let’s Be Friends</h3>
         </div>
 
-        <div className="grid grid-cols-3 grid-rows-2 gap-[30px]">
+        <div className="flex flex-col lg:grid grid-cols-2 grid-rows-2 xl:grid-cols-3 gap-[30px]">
           {socialMediaList.map((socialMedia) => (
             <SocialMediaCard className={classes['social-media-card']} {...socialMedia} />
           ))}

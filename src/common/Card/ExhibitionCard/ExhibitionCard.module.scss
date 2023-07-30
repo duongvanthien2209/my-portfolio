@@ -1,0 +1,31 @@
+.exhibition-card {
+  @apply relative rounded-lg overflow-hidden;
+
+  img {
+    @apply h-auto w-full duration-700;
+  }
+
+  .background {
+    @apply absolute top-0 left-0 z-2 w-full h-full opacity-0 duration-700;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.4276304271708683) 0%, rgba(115,115,115,0.3015800070028011) 30%, rgba(255,255,255,0) 100%);
+  }
+
+  .content {
+    @apply absolute top-full left-0 z-3 w-full h-auto p-4 duration-700;
+  }
+
+  &:hover {
+    img {
+      @apply scale-125;
+    }
+
+    .background {
+      @apply opacity-100;
+    }
+
+    .content {
+      @apply -translate-y-full;
+    }
+  }
+}

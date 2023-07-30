@@ -3,7 +3,7 @@
   foo: bar;
 
   .tab-list {
-    @apply grid grid-cols-6 border border-fourth border-t-0;
+    @apply grid sm:grid-cols-3 md:grid-cols-6 border border-fourth border-t-0;
     foo: bar;
 
     .tab-header {

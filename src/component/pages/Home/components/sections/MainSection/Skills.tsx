@@ -16,7 +16,7 @@ export function Skills({}: Props): ReactElement {
   ];
 
   return (
-    <div className="grid grid-cols-2 px-[50px] py-[70px] gap-[60px]">
+    <div className="flex flex-col md:grid grid-cols-2 px-[50px] py-[70px] gap-[60px]">
       {skills.map((skill) => (
         <ProgressBar {...skill} />
       ))}

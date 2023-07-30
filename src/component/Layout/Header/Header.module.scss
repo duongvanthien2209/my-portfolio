@@ -1,6 +1,5 @@
 .header {
-  @apply container py-9
-  flex justify-between items-center;
+  @apply relative container;
   foo: bar;
 
   .brand {
@@ -52,5 +51,42 @@
         }
       }
     }
+  }
+
+  .small-menu {
+    @apply absolute z-2 top-full left-0 w-full bg-primary lg:hidden
+    flex flex-col overflow-hidden duration-500;
+    transform: translateY(-100%);
+    opacity: 0;
+
+    &.open {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .main-menu-item {
+      a {
+        @apply text-white text-main-link font-normal uppercase
+        block px-6 py-4 w-full border-b;
+
+        &:hover,
+        &.active {
+          @apply text-textPrimary;
+        }
+      }
+
+      &:last-child {
+        a {
+          @apply border-b-0;
+        }
+      }
+    }
+  }
+}
+
+@screen mdDown {
+  .header {
+    @apply px-0;
+    width: 100% !important;
   }
 }

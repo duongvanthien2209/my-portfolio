@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { BlogLayout, Layout } from './component/Layout';
-import { ClassGrid, Contact, Home, LeftSidebar, PostTimeline, Price } from './component/pages';
+import { ClassGrid, Contact, Home, LeftSidebar, PostTimeline, Price, Project } from './component/pages';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,6 +19,7 @@ const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: '/price', element: <Price /> },
       { path: '/contact', element: <Contact /> },
+      { path: '/project', element: <Project title="Project Management Admin Panel" tab="Personal Project" /> },
       {
         path: '/blog',
         element: <BlogLayout />,

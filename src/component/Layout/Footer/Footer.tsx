@@ -28,17 +28,19 @@ export function Footer({}: Props): ReactElement {
           </Link>
         </div>
 
-        <Button className="float-right">Let's chat</Button>
-        <div className="flex flex-col justify-between items-center">
-          <h2 className="text-4xl font-semibold text-white">Let’s Talk?</h2>
+        <h2 className="text-4xl font-semibold text-white clear-both md:hidden py-8">Let’s Talk?</h2>
 
-          <div className="text-center mt-[40px]">
-            <ul className="flex justify-center mb-[20px]">
+        <Button className="md:float-right">Let's chat</Button>
+        <div className="flex flex-col justify-between items-center">
+          <h2 className="text-4xl font-semibold text-white hidden md:block">Let’s Talk?</h2>
+
+          <div className="text-center mt-[40px] w-full">
+            <ul className="flex flex-col md:flex-row md:justify-center mb-[20px]">
               {menuItems.map((menuItem) => (
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `px-[20px] py-[10px]${isActive ? ' text-textPrimary' : ' text-white hover:text-textPrimary'}`
+                      classNames(classes['link'], isActive ? 'text-textPrimary' : 'text-white hover:text-textPrimary')
                     }
                     to={menuItem.link}
                   >

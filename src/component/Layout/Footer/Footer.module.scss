@@ -1,0 +1,4 @@
+.link {
+  @apply uppercase text-left block md:border-b-0 md:px-[20px] py-[10px] #{!important};
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}

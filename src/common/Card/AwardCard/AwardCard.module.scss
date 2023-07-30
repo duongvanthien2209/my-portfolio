@@ -1,0 +1,23 @@
+.award-card {
+  @apply flex space-x-8 cursor-pointer;
+
+  .content {
+    @apply flex flex-col justify-between items-start;
+
+    p {
+      @apply text-white;
+
+      &:first-child {
+        @apply text-2xl font-semibold;
+      }
+    }
+  }
+
+  &:hover {
+    .content {
+      p:first-child {
+        @apply text-textPrimary;
+      }
+    }
+  }
+}

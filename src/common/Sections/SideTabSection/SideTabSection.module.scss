@@ -3,11 +3,11 @@
   foo: bar;
 
   .wrapper {
-    @apply container grid grid-cols-4;
+    @apply container flex flex-col md:grid grid-cols-4;
     foo: bar;
 
     .tab-list {
-      @apply flex flex-col;
+      @apply flex flex-col mb-4 md:mb-0;
       foo: bar;
 
       .title {
@@ -75,7 +75,7 @@
       foo: bar;
 
       .tab-panel {
-        @apply grid grid-cols-3 gap-4 grid-rows-2;
+        @apply grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-4;
         foo: bar;
 
         img {

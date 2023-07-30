@@ -55,7 +55,15 @@ export function ClientSection({}: Props): ReactElement {
 
       <Swiper
         spaceBetween={30}
-        slidesPerView={3.5}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 3,
+          },
+        }}
         pagination={{
           clickable: true,
           renderBullet: function (index, className) {

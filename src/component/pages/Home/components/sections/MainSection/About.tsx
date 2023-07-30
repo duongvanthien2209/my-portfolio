@@ -25,7 +25,7 @@ export function About({}: Props): ReactElement {
           comprehensive knowledge of various databases, including SQL and non-SQL like{' '}
           <span className="text-textPrimary">MongoDB</span> and <span className="text-textPrimary">MySQL</span>.
         </p>
-        <Button>Learn More</Button>
+        <Button className="mt-6">Learn More</Button>
       </div>
     </div>
   );

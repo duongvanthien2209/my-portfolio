@@ -1,22 +1,28 @@
 .interview-card {
-  @apply flex space-x-6;
+  @apply flex space-x-6 cursor-pointer;
+  foo: bar;
 
   .img {
     @apply relative w-full bg-cover bg-[center_top_1px] rounded-lg overflow-hidden;
+    foo: bar;
 
     &:before {
       @apply content-[''] block pb-[100%];
+      foo: bar;
     }
   }
 
   .content {
     @apply flex flex-col justify-between items-start;
+    foo: bar;
 
     p {
       @apply text-white;
+      foo: bar;
 
       &:first-child {
         @apply text-2xl font-semibold;
+        foo: bar;
       }
     }
 
@@ -24,20 +30,24 @@
       p {
         &:first-child {
           @apply text-textPrimary;
+          foo: bar;
         }
       }
     }
 
     .btn {
       @apply relative flex items-center;
+      foo: bar;
 
       svg {
         @apply absolute text-textPrimary top-[50%] -right-[1rem] -translate-y-[50%] opacity-0 duration-500;
+        foo: bar;
       }
 
       &:hover {
         svg {
           @apply -right-[2rem] opacity-100;
+          foo: bar;
         }
       }
     }

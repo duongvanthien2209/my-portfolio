@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import classes from './ProjectCard.module.scss';
 import { Button } from '../../Button';
+import { Link } from 'react-router-dom';
 
 export type ProjectCardProps = {
   tag: string;
@@ -19,7 +20,9 @@ export function ProjectCard({ tag, title, description, image }: ProjectCardProps
         <span className={classes['tags']}>{tag}</span>
         <h3 className={classes['title']}>{title}</h3>
         <p className={classes['description']}>{description}</p>
-        <Button>Read More</Button>
+        <Link className={classes['btn']} to="/project">
+          Read More
+        </Link>
       </div>
     </div>
   );

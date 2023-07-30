@@ -27,7 +27,7 @@
     foo: bar;
 
     img {
-      @apply relative;
+      @apply relative w-full h-auto;
       transition: all .4s;
     }
   }
@@ -50,5 +50,15 @@
       @apply text-white mb-[50px];
       foo: bar;
     }
+  }
+}
+
+.btn {
+  @apply button-sm py-4 px-[30px];
+  foo: bar;
+
+  &:hover {
+    @apply bg-textPrimary text-black;
+    transition: all 0.3s;
   }
 }
