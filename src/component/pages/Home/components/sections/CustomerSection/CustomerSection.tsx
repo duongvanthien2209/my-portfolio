@@ -41,7 +41,7 @@ export function CustomerSection({}: Props): ReactElement {
 
   return (
     <div className={classes['customer-section']}>
-      <div className="container">
+      <div className="lg:container">
         <Swiper
           loop={true}
           spaceBetween={30}
@@ -55,19 +55,20 @@ export function CustomerSection({}: Props): ReactElement {
             },
           }}
         >
+          {/*<div className="container">*/}
           {personalCards.map((personalCard, index) => (
             <SwiperSlide>
               <PersonalCard {...personalCard} />
             </SwiperSlide>
           ))}
-          <div className="flex justify-between items-center mb-[50px]" slot="container-start">
+          <div className={classes['custom-slide-header']} slot="container-start">
             <div className={classes['title']}>
               <span>TESTIMONIALS</span>
               <h3>Happy Clients Says</h3>
             </div>
-
             <CustomerNavigation />
           </div>
+          {/*</div>*/}
         </Swiper>
       </div>
     </div>

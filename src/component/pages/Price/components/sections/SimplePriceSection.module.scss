@@ -25,7 +25,7 @@
   }
 
   .cards {
-    @apply grid grid-cols-3 gap-[30px];
+    @apply flex flex-col mdDown:space-y-[30px] lg:grid grid-cols-3 gap-[30px];
     foo: bar;
   }
 }

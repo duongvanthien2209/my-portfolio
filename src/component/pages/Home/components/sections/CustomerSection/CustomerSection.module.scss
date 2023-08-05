@@ -2,17 +2,46 @@
   @apply bg-third py-[120px];
   foo: bar;
 
-  .title {
-    span {
-      @apply text-textPrimary uppercase;
+  @screen mdDown {
+    padding-left: calc((100% - 750px)/2 + 15px);
+  }
+
+  @screen smDown {
+    @apply pl-[15px];
+    foo: bar;
+  }
+
+  @screen xsDown {
+    @apply px-[15px];
+    foo: bar;
+  }
+
+  .custom-slide-header {
+    @apply flex justify-between items-center mb-[50px];
+    foo: bar;
+
+    @screen mdDown {
+      padding-right: calc(100% - 750px + 15px);
+    }
+
+    @screen smDown {
+      @apply pr-[15px];
       foo: bar;
     }
 
-    h3 {
-      @apply text-5xl text-white font-bold;
-      foo: bar;
+    .title {
+      span {
+        @apply text-textPrimary uppercase;
+        foo: bar;
+      }
+
+      h3 {
+        @apply text-5xl text-white font-bold;
+        foo: bar;
+      }
     }
   }
+
 }
 
 

@@ -23,7 +23,7 @@
   }
 
   .form-content {
-    @apply grid grid-cols-2 grid-rows-4 gap-[30px];
+    @apply flex flex-col mdDown:space-y-[30px] lg:grid grid-cols-2 grid-rows-4 gap-[30px];
     foo: bar;
 
     input, textarea {
@@ -34,7 +34,7 @@
 }
 
 .contacts {
-  @apply py-[120px] grid grid-cols-3;
+  @apply py-[120px] flex flex-col smDown:space-y-6 md:grid grid-cols-3;
   foo: bar;
 
   .contact-card {

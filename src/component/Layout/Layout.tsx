@@ -8,7 +8,7 @@ import { Footer } from './Footer';
 export function Layout(): ReactElement {
   return (
     <div className={classes['layout']}>
-      <div className="absolute z-[999] top-0 left-0 w-full">
+      <div className="relative lg:absolute z-[999] top-0 left-0 w-full">
         <Header />
       </div>
 

@@ -1,39 +1,52 @@
 .banner-section {
   @apply relative w-full h-[100vh] border-b border-fourth;
+  foo: bar;
 
   .content {
-    @apply relative z-2 container flex h-full;
+    @apply relative z-2 container flex flex-col lg:flex-row h-full overflow-hidden;
+    foo: bar;
 
     .description {
       @apply flex items-center flex-grow;
+      foo: bar;
 
       p {
         @apply text-8xl font-bold text-white mb-0;
+        foo: bar;
 
         span:first-child, span:last-child {
           @apply text-3xl font-normal;
+          foo: bar;
         }
 
         span:first-child {
           @apply text-textPrimary;
+          foo: bar;
         }
       }
     }
 
     .person {
       @apply h-[80vh] w-auto;
+      foo: bar;
     }
   }
 
   .bubbles {
     @apply absolute top-0 left-0 w-full h-full
-    flex;
+    flex items-start;
+    foo: bar;
 
     span {
-      @apply relative h-[30px] w-[30px] bg-[#4fc3dc] mx-1 rounded-full;
+      @apply relative block w-full bg-[#4fc3dc] mx-1 rounded-full;
       box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
       animation: animate 15s linear infinite;
       animation-duration: calc(30s / var(--i));
+
+      &:before {
+        @apply content-[''] block pt-[100%];
+        foo: bar;
+      }
 
       &:nth-child(even) {
         @apply bg-[#ff2d75];

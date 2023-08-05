@@ -67,7 +67,7 @@
     .main-menu-item {
       a {
         @apply text-white text-main-link font-normal uppercase
-        block px-6 py-4 w-full border-b;
+        block px-6 py-4 w-full border-b border-fourth;
 
         &:hover,
         &.active {

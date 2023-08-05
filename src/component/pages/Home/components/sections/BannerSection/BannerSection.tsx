@@ -18,7 +18,7 @@ export function BannerSection(): ReactElement {
             <span>Full-stack Developer</span>
           </p>
         </div>
-        <div className="flex items-end">
+        <div className="flex justify-center items-end">
           <img
             className={classes['person']}
             src="https://wp.quomodosoft.com/growth/wp-content/uploads/2019/10/hero_1.png"

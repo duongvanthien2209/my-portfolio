@@ -14,6 +14,16 @@
     padding-left: calc((100% - 750px)/2 + 15px);
   }
 
+  @screen smDown {
+    @apply pl-[15px];
+    foo: bar;
+  }
+
+  @screen xsDown {
+    @apply px-[15px];
+    foo: bar;
+  }
+
   .title {
     @apply pb-[50px];
     foo: bar;
